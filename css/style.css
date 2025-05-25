@@ -9707,3 +9707,20 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
+.home-bg {
+  background-image: url('images/bgm.png');
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  background-position-x: 100px; /* Horizontal shift */
+  background-position-y: top;   /* Keep vertical alignment */
+  height: 100vh;
+  margin-top: -10px;
+}
+
+/* Responsive: center on smaller screens */
+@media (max-width: 768px) {
+  .home-bg {
+    background-position-x: center;
+    background-size: contain; /* Optional: scale image better on small screens */
+  }
+}
