@@ -149,7 +149,7 @@
 			            <h1 class="mb-4 mt-3">I'm <span>Abhinav Jain</span></h1>
 
 						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+						<span id="typing-animation" style="font-size: 26px";></span>
 
 						<script>
 
@@ -158,8 +158,8 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Aspiring Data Analyst  ',
-				        'SQL | Power BI | MS Excel | Python'
+						'Data Analyst  ',
+				        'SQL • Power BI • MS Excel • Python'
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -175,7 +175,7 @@
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
+						}, text.length * 200+900);
 						}
 
 						// Start the typing animation loop

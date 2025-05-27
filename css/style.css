@@ -8533,11 +8533,11 @@ h1, h2, h3, h4, h5,
                 padding-right: 3em; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
-          font-weight: 600;
-          font-size: 14px;
+          font-weight: 620;
+          font-size: 18px;
           letter-spacing: 3px;
           text-transform: uppercase;
-          color: #ffbd39; }
+          color: #ffffff; }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           position: relative;
           z-index: 1; }
@@ -9708,19 +9708,21 @@ textarea.form-control {
 
 
 .home-bg {
-  background-image: url('images/bgm.png');
-  background-size: 85% auto;
   background-repeat: no-repeat;
-  background-position-x: 100px; /* Horizontal shift */
-  background-position-y: top;   /* Keep vertical alignment */
-  height: 100vh;
-  margin-top: -10px;
+  background-position: 70%;
+  background-size: contain;    /* scale image to fit inside container */
+  height: 80vh;                /* reduce height to 70% of viewport height */
+  max-height: 450px;           /* limit max height so image doesn't get too big */
+ 
 }
 
-/* Responsive: center on smaller screens */
+/* Mobile */
 @media (max-width: 768px) {
   .home-bg {
-    background-position-x: center;
-    background-size: contain; /* Optional: scale image better on small screens */
+    height: 55vh;              /* smaller height on mobile */
+    max-height: 350px;         /* smaller max height on mobile */
+    background-position: center center;
+    background-size: contain;
   }
 }
+
